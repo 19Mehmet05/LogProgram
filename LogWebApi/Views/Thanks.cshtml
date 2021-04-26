@@ -1,0 +1,16 @@
+﻿@model LogWebApi.Models.DavetiyeModel
+@{
+    ViewBag.Title = "Thanks";
+}
+
+<h2>Thanks ,@Model.Ad</h2>
+<div class="lead">
+  @if (Model.KatılımDurum==true)
+  {
+      @:Gelmene Sevindim!
+  }
+  else
+  {
+      @:Hayırlısı!
+  }
+</div>
